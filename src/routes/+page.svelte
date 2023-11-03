@@ -3,6 +3,7 @@
   import NavBar from "../components/navbar.svelte";
   import Logo from "../components/logo.svelte";
   import SplashImg from "../components/splashimg.svelte";
+  import Poll from "../components/poll.svelte";
 </script>
 
 <Logo />
@@ -13,18 +14,25 @@
       backsplashImage="./img/butterfly.jpeg"
       title="Welcome"
     >
-      ... to my 90210 fanpage!  This is a place to talk about
-      the original run of 90210, airing from 1990-2000.  I haven't
-      been able to find that many active pages about the show- so
-      I'm going to try to stay dedicated.
+      <p>
+        This is a place to talk about
+        the original run of 90210, airing from 1990-2000.  I haven't
+        been able to find that many active pages about the show- so
+        I'm going to try to stay dedicated.
+      </p>
     </Sticky>
     <Sticky
       gradient={["#FFE9AF", "#FF9C64"]}
       long={true}
       backsplashImage="./img/flowers.gif"
     >
-      <p>Let's try to do this.  Multiple paragraphs in the sticky. blah blah blah bl</p>
-      <p>Marina is so cool</p>
+      <h3>
+        Updates
+      </h3>
+      <p>
+        This show has not been on the air for almost a 1/4 century so
+        I don't think there'll be any updates
+      </p>
     </Sticky>
   </div>
   <div class="col">
@@ -37,17 +45,15 @@
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-bb_L3pTUF3mGB3ZwGFxsEkIWFJCUcs-hpFJSN5kx1QDBjLa2O2vKXbpPg2LNJTaX2Cg&usqp=CAU"
         alt="the hollywood sign"
       />
-      
-      <p>
-        Let's try to do this.  Multiple paragraphs in
-        the sticky. blah blah blah bl
-      </p>
-      <p>Marina is so cool</p>
+      <h2>Poll</h2>
+      <Poll topic="characters" />
     </Sticky>
     <Sticky
       backsplashImage="./img/sunflower.jpeg"
     >
-      <p></p>
+      <p>
+        
+      </p>
     </Sticky>
   </div>
 </main>
