@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SF Hollywood Hills';
+    src: url('SFHollywoodHills.woff2') format('woff2'),
+        url('SFHollywoodHills.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
